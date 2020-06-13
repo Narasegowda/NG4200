@@ -1,10 +1,10 @@
-# MatFortyTwo
+# DSL SLK
 
 The answer to everything (well... almost) that's Angular Material
 
 ## Description
 
-MatFortyTwo is a boilerplate for Angular Material that promotes a design
+DSL SLK is a boilerplate for Angular Material that promotes a design
 with two separate navigation stacks. One at root level and one (with title
 and sidenav) accessible only after having logged in. It also packs a lot
 of perks to help you kickstart your Angular project in a matter of minutes!
