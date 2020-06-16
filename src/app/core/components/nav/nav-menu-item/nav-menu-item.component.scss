@@ -13,13 +13,13 @@
     }
     &:hover {
         background-color: transparentize($primaryColor, 0.8);
-        border-color: transparentize($primaryColor, 0.8);
+        border-color: transparentize($primaryColor, 0);
         .item-selector {
             transform: translateX(-5px);
         }
     }
     &.selected {
-        color: $primaryColor;
+        color: #672a96;
         border-color: transparentize($primaryColor, 0.8);
         font-weight: 500;
         .item-selector {
@@ -35,7 +35,7 @@
         width: 100%;
         position: absolute;
         right: -100%;
-        background-color: $primaryColor;
+        background-color: #672a96;
     }
 }
 
