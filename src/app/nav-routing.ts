@@ -55,7 +55,16 @@ export const navRoutes: NavRoute[] = [
                 m => m.ContactPageModule,
             ),
     },
-];
+{data: {title: 'Organization'},icon: 'menu',group: '',path: 'organization',loadChildren: () =>
+                import('./pages/organization-page/organization-page.module').then(
+                    m => m.OrganizationPageModule,
+                ),},{data: {title: 'L1'},icon: 'menu',group: '',path: 'l1',loadChildren: () =>
+                import('./pages/l1-page/l1-page.module').then(
+                    m => m.L1PageModule,
+                ),},{data: {title: 'L2'},icon: 'menu',group: '',path: 'l2',loadChildren: () =>
+                import('./pages/l2-page/l2-page.module').then(
+                    m => m.L2PageModule,
+                ),},];
 
 @Injectable({
     providedIn: 'root',

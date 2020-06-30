@@ -34,7 +34,7 @@ export class ExportPageComponent {
                 );
             };
 
-            reader.onerror = () =>{
+            reader.onerror = () => {
                 console.log('error is occured while reading file!');
             };
         } else {
