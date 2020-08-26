@@ -1,0 +1,113 @@
+.img {
+    background-position: center;
+}
+p {
+    padding-left: 30px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+.column {
+    width: 100%;
+    margin: 20px;
+    padding: 0 10px;
+    background-color: white;
+}
+.container {
+    padding: 20px;
+}
+
+.background-page{
+    background-size: cover;
+  height: 100%;
+  overflow: hidden;
+    background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+input[type="text"] {
+	width: 100%;
+	border-radius: var(--border-radius);
+	background-color: rgba(var(--c-white), 0.05);
+	border-width: 2px;
+
+	&:focus + .search-icon {
+		color: rgb(var(--c-white));
+	}
+}
+.search-field {
+	margin-left: 50px;
+    width: 80%;
+}
+
+.app-head {
+	margin-left: 50px;
+}
+
+.related-videos {
+	background-color:  rgb(102,51,153);;
+	width : 80%;
+	border-radius: 10px;
+	margin-left : 80px;
+	padding : 20px;
+	
+}
+.mat-grid-tile {
+	border-radius: 10px;
+	opacity:1.5;
+}
+
+.p-style {
+	color: white;
+}
+.trending-videos{
+	background-color:  rgb(102,51,153);
+	width : 80%;
+	border-radius: 10px;
+	margin-left : 80px;
+	padding : 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.form-control {
+	float: right;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+
+.background-page{
+   
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ height:100%
+}
+
+.app-container{
+	opacity:0.8;
+}
+.trending-videos{
+	opacity:0.8;
+}
+
+img.pic{
+	opacity:0.8;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:100%;
+
+}
+
+.icon{
+	font-size:70px;
+}
+.aligned-with-icon{
+    position: absolute;
+	margin-top: 5px;
+	width: 80%;
+}

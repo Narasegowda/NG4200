@@ -1,0 +1,53 @@
+<!--<mat-toolbar class="header">
+    <mat-toolbar-row>
+        <h1>SLKHub</h1>
+    </mat-toolbar-row>
+</mat-toolbar>-->
+<div style="background-image: url(../assets/images/background1.PNG)" class="back">
+    <!--<img class="background-page" src="assets/images/background.png">-->
+   
+ <div class="login-page" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="50px">
+   <!--<div class="parallelogram" ><h1>SLKHub</h1>
+    </div>-->
+   <div class="logo-container" fxFlexAlign="center">
+        <img src="https://plsadaptive.s3.amazonaws.com/eco/images/partners/d9LlH30uApq7yZFT7FZGjR1xd4s9zwzcCZroXnUj.png" class="rounded-corner">
+        <app-logo></app-logo>
+    </div>
+   
+
+    <mat-card class="card" fxFlexAlign="center" position="fixed">
+        <mat-card-title>
+           <h4>Login </h4> 
+        </mat-card-title>
+       
+        <mat-card-content>
+            <form (keyup.enter)="login(email, password)">
+                <mat-form-field class="login-field" appearance="outline">
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <a>
+                        <span class="glyphicon glyphicon-user"></span>
+                        </a>-->
+                    <input matInput placeholder="Email" name="email" [(ngModel)]="email" type="email" autocomplete="username email"/>
+                </mat-form-field>
+                <mat-form-field class="login-field" appearance = "outline" >
+                    <mat-icon matPrefix>lock</mat-icon>
+                    <input matInput placeholder="Password" name="password" [(ngModel)]="password" type="password" autocomplete="current-password"/>
+                </mat-form-field>
+                <mat-checkbox class = "tp-margin" >Remember me</mat-checkbox>
+              <!--  <mat-card-actions>
+                <a mat-button routerLink = " ">Forgot Password ? </a>
+               
+            </mat-card-actions>-->
+            </form>
+            <mat-error [textContent]="errorMessage"></mat-error>
+        </mat-card-content>
+        <button mat-raised-button color="primary" appearance="outline" 
+        class="login-field" (click)="login(email, password)" type="submit">
+         Login
+    </button>
+    </mat-card>
+
+</div>
+</div>
+
+

@@ -1,0 +1,89 @@
+<div  style="background-image: url(../assets/images/background.png)" class="back" >
+  <!--<div class="background-page" >-->  
+<div>
+<header>
+    <mat-icon class="icon">video_library</mat-icon>
+    <span class="aligned-with-icon">
+	<mat-form-field class="search-field" appearance = "outline" >
+    <mat-icon matPrefix>search</mat-icon>
+    <input matInput placeholder="Search" name="search"  type="text"/>
+</mat-form-field></span>
+</header></div><br>
+
+
+<div class="carousel">
+
+<mat-carousel class="car"
+  timings="250ms ease-in"
+  [autoplay]="true"
+  interval="5000"
+  color="accent"
+  maxWidth="auto"
+  proportion="35"
+  slides="5"
+  [loop]="true"
+  [hideArrows]="false"
+  [hideIndicators]="false"
+  [useKeyboard]="true"
+  [useMouseWheel]="false"
+  orientation="ltr"
+>
+  <mat-carousel-slide
+    #matCarouselSlide
+    *ngFor="let slide of slides; let title1 of slides1 ;let i = index"
+    [image]="slide.image"
+    overlayColor="#00000040"
+    [hideOverlay]="false">
+
+    
+  </mat-carousel-slide>
+</mat-carousel>
+</div>
+
+
+<br>
+
+
+<div id="related-video-list" class="app-container">
+  <div class="app-head">
+       </div>
+  <div class="related-videos">
+    <!--<p class="p-style"><h2>Related Videos</h2></p>-->
+    <h3 class="p-style">Trending  Videos</h3>
+    <mat-grid-list cols="4" rowHeight="80px" [gutterSize]="'10px'">
+        <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      
+        </mat-grid-tile>
+    </mat-grid-list>
+    <br>
+    <mat-grid-list cols="4" rowHeight="20px" [gutterSize]="'10px'">
+        <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+</div>
+<br>
+<!--<div class="trending-videos">
+    
+        <h3 class="p-style">Trending  Videos</h3>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+           <div class="form-group">
+                <select formControlName="category" class="form-control">
+                    <option disabled>Select Category</option>
+                    <option>Choose Website</option>
+                    <option *ngFor="let cat of categoryList">{{cat}}</option>
+                </select>
+            </div>
+        </form>
+    
+  </div>-->
+</div>

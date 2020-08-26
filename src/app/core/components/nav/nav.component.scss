@@ -1,0 +1,19 @@
+.sidenav-container {
+    height: 100%;
+
+    mat-sidenav {
+        box-shadow: 0 0 10px -5px #bbb;
+        border: none;
+    }
+}
+
+.sidenav-logo-container {
+    width: 300px;
+    height: 200px;
+    padding: 16px;
+    border-radius: 0 0 20% 20%;
+    box-shadow: 0 10px 15px -10px #bbb;
+    background: white;
+    margin-bottom: 16px;
+    background-image: url('https://dms.licdn.com/video-thumbs/C4E05AQEcAEP_yu-hgQ/fae04c8f4a664848a1b71479ccb35e8f/feedshare-videocover_low-captions-thumbnails/480x270-00001.jpg');
+}
